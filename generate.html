@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Voucher Generator</title>
+<style>
+body { font-family:sans-serif; display:flex; justify-content:center; align-items:center; height:100vh; background:#f0f0f0; }
+.container { background:white; padding:2rem; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center; }
+input { padding:0.5rem; width:150px; margin:0.5rem; }
+button { padding:0.5rem 1rem; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Generate Vouchers</h2>
+  <form action="/cgi-bin/voucher_generate.sh" method="POST">
+    <input type="number" name="hours" placeholder="Hours" required>
+    <input type="number" name="count" placeholder="Count" required>
+    <br>
+    <button type="submit">Generate</button>
+  </form>
+</div>
+</body>
+</html>

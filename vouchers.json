@@ -1,0 +1,6 @@
+{
+  "vouchers": [
+    {"code": "ABC123", "hours": 2, "used": 0, "active": true},
+    {"code": "XYZ789", "hours": 10, "used": 4, "active": true}
+  ]
+}
